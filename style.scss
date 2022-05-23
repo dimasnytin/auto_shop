@@ -365,9 +365,173 @@ section{
   font-size: 2.5rem;
   color: var(--black);
 }
+// newsletter style старт
+.newsletter{
+  padding: 6rem 2rem;
+  text-align: center;
+  background: url(../image/letter-bg.png) no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.newsletter h3{
+  color: var(--black);
+  font-size: 3rem;
+}
+.newsletter p {
+  color: var(--light-color);
+  font-size: 1.5rem;
+  padding: 1rem 0;
+}
+// стили для формы подписки на объявления
+.newsletter form{
+  margin: 1rem auto;
+  max-width: 60rem;
+  height: 5rem;
+  display: flex;
+  box-shadow: var(--box-shadow);
+  overflow: hidden;
+  border-radius: 5rem;
+}
+.newsletter form input[type="email"]{
+  height: 100%;
+  width: 100%;
+  font-size: 1.6rem;
+  color: var(--black);
+  text-transform: none;
+  padding: 0 2rem;
+}
+.newsletter form input[type="submit"] {
+  height: 100%;
+  width: 17rem;
+  font-size: 1.7rem;
+  color: var(--black);
+  background: var(--light-yellow);
+  cursor: pointer;
+}
+.newsletter form input[type="submit"]:hover{
+  background: var(--yellow);
+}
+// reviews style старт
+.reviews .reviews-slider{
+  padding-bottom: 3rem;
+}
+.reviews .reviews-slider .box{
+  padding: 2rem;
+  margin: 2rem 0;
+  text-align: center;
+  opacity: .4;
+  transform: scale(.9);
+}
+.reviews .reviews-slider .swiper-slide-active{
+  opacity: 1;
+  transform: scale(1);
+  box-shadow: var(--box-shadow);
+  border: var(--border);
+}
+.reviews .reviews-slider .box img{
+  height: 7rem;
+  width: 7rem;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+.reviews .reviews-slider .box .content p{
+  font-size: 1.4rem;
+  color: var(--light-color);
+  padding: 1rem 0;
+}
+.reviews .reviews-slider .box .content h3 {
+  font-size: 2.2rem;
+  color: var(--black);
+  padding-bottom: 0.5rem; 
+}
+.reviews .reviews-slider .box .content .stars i{
+  font-size: 1.7rem;
+  color: var(--yellow);
+}
+// contact style старт
+.contact .row{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+.contact .row .map {
+  flex: 1 1 42rem;
+  width: 100%;
+  padding: 2rem;
+  box-shadow: var(--box-shadow);
+  border: var(--border);
+  border-radius: .5rem;
+}
+.contact .row form {
+  padding: 2rem;
+  flex: 1 1 42rem;
+  box-shadow: var(--box-shadow);
+  border: var(--border);
+  text-align: center;
+  border-radius: .5rem;
+  text-align: center;
+}
+.contact .row form h3{
+  font-size: 3rem;
+  color: var(--black);
+}
+.contact .row .box{
+  margin: 0.7rem 0;
+  width: 100%;
+  border: var(--border);
+  padding: 1rem;
+  font-size: 1.6rem;
+  color: var(--black);
+  text-transform: none;
+  border-radius: .5rem;
+}
+.contact .row form textarea{
+  height: 15rem;
+  resize: none;
+}
+// FOOTER style старт
+.footer {
+  background: var(--light-yellow);
+  padding-bottom: 8rem;
+}
 
+.footer .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap: 1.5rem;
+}
 
+.footer .box-container .box h3 {
+  font-size: 2.2rem;
+  padding: 1rem 0;
+  color: var(--black);
+}
 
+.footer .box-container .box a {
+  display: block;
+  font-size: 1.4rem;
+  padding: 1rem 0;
+  color: var(--light-color);
+}
+
+.footer .box-container .box a i {
+  padding-right: .5rem;
+  color: var(--black);
+}
+
+.footer .box-container .box a:hover i {
+  padding-right: 2rem;
+}
+
+.footer .credit {
+  text-align: center;
+  padding: 1.5rem;
+  padding-top: 2.5rem;
+  margin-top: 2rem;
+  border-top: var(--border);
+  font-size: 2rem;
+  color: var(--black);
+}
 
 
 
